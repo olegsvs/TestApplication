@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:paddingLeft="@dimen/size_normal"
+            android:paddingRight="?actionBarSize"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:drawablePadding="@dimen/size_normal"
+            android:textSize="@dimen/font_middle"
+            android:textColor="@color/white"
+            android:text="Photos"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photo_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"/>
+
+    </RelativeLayout>
+
+</layout>

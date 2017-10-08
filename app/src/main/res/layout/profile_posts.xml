@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.example.testapp.ui.profile.post.ProfilePostView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/user_post_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/add_post_fab"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:layout_marginRight="@dimen/size_normal"
+                android:layout_marginBottom="@dimen/size_normal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_add"
+                android:tint="@color/white"/>
+
+    </com.example.testapp.ui.profile.post.ProfilePostView>
+
+</layout>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="size_line">1dp</dimen>
+    <dimen name="size_small">8dp</dimen>
+    <dimen name="size_normal">16dp</dimen>
+    <dimen name="size_image">24dp</dimen>
+    <dimen name="size_middle">32dp</dimen>
+    <dimen name="size_big">40dp</dimen>
+    <dimen name="size_edit_text">72dp</dimen>
+    <dimen name="size_photo">196dp</dimen>
+
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_middle">16sp</dimen>
+
+</resources>

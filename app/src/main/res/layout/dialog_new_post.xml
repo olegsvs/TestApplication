@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/size_middle"
+        android:padding="@dimen/size_normal"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/cross_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:padding="@dimen/size_normal"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_close"
+            android:tint="@color/black"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_edit_text"
+            android:layout_marginTop="@dimen/size_normal">
+
+            <EditText
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/post_body"
+                android:inputType="text"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/black"
+                android:hint="Enter post title"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_edit_text"
+            android:layout_marginTop="@dimen/size_normal">
+
+            <EditText
+                android:id="@+id/post_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/black"
+                android:hint="Enter post body"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/save_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_normal"
+            android:theme="@style/ButtonTheme"
+            android:text="save post"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
